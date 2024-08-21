@@ -51,10 +51,31 @@ console.log(typeof heros);
 //        Function  =>  function
 //        Object  =>  object
 
+// https://262.ecma-international.org/5.1/#sec-11.4.3
 
 
+//***************************************************** */
 
+// Stack (Primitive), Heap (non Primitive)
 
+let myname = "Suraj"
 
+let anothername = myname
+anothername = "golu"
+
+console.log(myname);
+console.log(anothername);
+
+let userone = {
+    email: "surajsingh@gmail.com",
+    upi: "suraj@ybl"
+}
+
+let usertwo = userone
+
+usertwo.email = "xyz@gmail.com"
+
+console.log(userone.email);
+console.log(usertwo.email);
 
 
